@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>newsApi</title>
+</head>
+
+<body>
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript">
+    //===========================================//
+                 //*****Business Apis****//
+    //==Bloomberg==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=bloomberg&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==CNBC==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=cnbc&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==The Wallstreet Journal==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=the-wall-street-journal&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //================================================/
+                //*****Entertainment Apis****//
+    //==BuzzFeed==//    
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=buzzfeed&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    }); 
+    //==Entertainment Weekly==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=entertainment-weekly&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Daily Mail==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //================================================
+                //*****Gaming Apis****//
+    //==IGN==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=ign&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Polygon==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=polygon&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //================================================
+                //*****General News Apis****//
+    //==Al Jazeera==//    
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=al-jazeera-english&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    }); 
+    //==BBC News==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==CNN News==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Independent==//    
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=independent&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    }); 
+    //==The Guardian UK==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=the-guardian-uk&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Google News==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Reuters==//    
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=reuters&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    }); 
+    //==The Washington Post==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=the-washington-post&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Time==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=time&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //================================================
+                //*****Music News Api****//
+    //==MTV News==//    
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=mtv-news&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    }); 
+
+    //================================================
+                //*****Politics Api****//
+    //==Breitbart News==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=breitbart-news&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //================================================
+                //*****Science and Nature Api****//
+    //==New Scientist==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=new-scientist&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==National Geographic==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=national-geographic&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //================================================
+              //******Sports Apis******//
+    //==BBC Sport==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==ESPN==//    
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=espn&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    }); 
+    //==Fox Sports==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=fox-sports&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==The Sport Bible==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=the-sport-bible&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //================================================
+              //******Technology Apis******//
+    //==Engadget==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=engadget&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Gruenderszene==//    
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=gruenderszene&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    }); 
+    //==Hacker News==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=hacker-news&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Tech Crunch==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+    //==Tech Radar==//
+    $.ajax({
+      url: "https://newsapi.org/v1/articles?source=techradar&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+    });
+
+    //=====================================================================================//
+  </script>
+
+</body>
+
+</html>

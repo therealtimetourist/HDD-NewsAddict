@@ -8,9 +8,9 @@
     }).done(function(response) {
 
       $('#finance').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -41,9 +41,9 @@
     }).done(function(response) {
 
       $('#movies').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -74,9 +74,9 @@
     }).done(function(response) {
 
       $('#gaming').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -114,9 +114,9 @@
     }).done(function(response) {
 
       $('#worldNews').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -175,9 +175,9 @@
     }).done(function(response) {
 
       $('#music').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -194,9 +194,9 @@
     }).done(function(response) {
 
       $('#politics').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -220,9 +220,9 @@
     }).done(function(response) {
 
       $('#science').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -246,9 +246,9 @@
     }).done(function(response) {
 
       $('#sports').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[2].title
+      var image = response.articles[2].urlToImage
+      var caption = response.articles[2].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -300,9 +300,9 @@
     }).done(function(response) {
 
       $('#tech').on("click", function(event){
-      var title = response.articles[0].title
-      var image = response.articles[0].urlToImage
-      var caption = response.articles[0].description
+      var title = response.articles[1].title
+      var image = response.articles[1].urlToImage
+      var caption = response.articles[1].description
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');

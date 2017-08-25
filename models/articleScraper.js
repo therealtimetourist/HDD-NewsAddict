@@ -33,6 +33,8 @@ request(url, function(err, resp, body){
 	var article = $('.body-copy');
 	var articleText = article.text();
 
+	$('.post').html("<p>" + articleText + "</p>");
+
 	console.log(articleText);
 })
 

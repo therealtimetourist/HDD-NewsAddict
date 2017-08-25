@@ -58,4 +58,4 @@ typings/
 .env
 
 # OS X hidden
-files.DS_Store
+.DS_Store

@@ -23,11 +23,13 @@ var app = express();
 // Serve static content for app from "public" directory
 app.use(express.static("public"));
 // use html interpreter from body-parser npm
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // override with POST having ?_method=DELETE
 app.use(methodOverride("_method"));
-
 // Set Handlebars instance
 var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));

@@ -1,9 +1,9 @@
-var express = require('express');
-var path = require('path');
+//var express = require('express');
+//var path = require('path');
 var app = express();
-var request = require('request');
-var cheerio = require('cheerio');
-var fs = require('fs');
+//var request = require('request');
+//var cheerio = require('cheerio');
+//var fs = require('fs');
 var port = 8080;
 
 var url = "https://techcrunch.com/2017/08/21/y-combinator-summer-2017/"

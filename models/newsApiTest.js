@@ -7,10 +7,14 @@
       method: 'GET'
     }).done(function(response) {
 
+        console.log(response)
+
       $('#finance').on("click", function(event){
       var title = response.articles[0].title
       var image = response.articles[0].urlToImage
       var caption = response.articles[0].description
+
+
 
       $(".article-title").html("<center><h1>" + title + "</h1></center>");
       $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
@@ -153,6 +157,8 @@
 
     });
     });
+
+
     //==BBC News==//
     // $.ajax({
     //   url: "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8",

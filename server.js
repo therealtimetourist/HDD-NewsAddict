@@ -16,7 +16,7 @@ var fs = require('fs');
 var mysql = ('mysql');
 
 // determine if port is live or local
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4000;
 // create instance of express
 var app = express();
 
@@ -26,7 +26,7 @@ app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+// app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // override with POST having ?_method=DELETE
 app.use(methodOverride("_method"));
@@ -46,7 +46,7 @@ app.listen(port, function() {
 
 // newsCycle: get new story from the API
 function newsCycle(){
-	var cc = 6;
+	var cc = 2;
 	var interval = setInterval(function(){
 		console.log(-- cc);
 
@@ -55,10 +55,32 @@ function newsCycle(){
 			console.log("time's up!  Getting another news article...");
 			// API Magic here
 			//==Daily Mail ==//
-			request('https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8', function (error, response) {
+			request('https://newsapi.org/v1/articles?source=bloomberg&sortBy=top&apiKey=091a3ab93dd24678b96df7d26d7717f8', function (error, response) {
 				//console.log('error:', error); // Print the error if one occurred
+				
 				//console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
-				console.log('body:', response.body); // Print the HTML for the Google homepage. 
+				var arti = response.body;
+				var artic = JSON.parse(arti);
+
+				console.log(artic.articles[0].title)
+
+	
+				 //  $('#finance').on("click", function(event){
+			  //     var title = artic.articles[0].title
+			  //     var image = artic.articles[0].urlToImage
+			  //     var caption = artic.articles[0].description
+			  // });
+
+
+
+      // $(".article-title").html("<center><h1>" + title + "</h1></center>");
+      // $(".bxslider").prepend('<img src="'+ image +'" title="' + caption + '">');
+				 // Print the HTML for the Google homepage.
+
+				   //     Headline : response.articles[0].title,
+       // urlToImage :response.articles[0].urlToImage,
+       // Description :response.articles[0].description,
+       // StoryBody :response.articles[0].url 
 
 				// write the bits from the response object to the database
 
